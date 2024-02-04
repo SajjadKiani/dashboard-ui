@@ -42,9 +42,8 @@ export default function MyLineChart ({ title }) {
         <div className="h-[150px]">
            <ResponsiveContainer width={'100%'} height={'100%'}>
               <LineChart data={data}>
-                  
+              <CartesianGrid stroke="#f5f5f5" />                  
                   <Line type="monotone" dataKey="revenue" stroke="#000"  strokeWidth={1.5} />
-                  <CartesianGrid stroke="#f5f5f5" />
                   {/* <XAxis dataKey="subscription" /> */}
                   {/* <YAxis /> */}
                   {/* <Tooltip /> */}
