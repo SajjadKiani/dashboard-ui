@@ -2,7 +2,7 @@ import MyBarChart from "@/components/common/MyBarChart";
 import Toolbar from "@/components/common/Toolbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Users, ShoppingCart, Activity } from "lucide-react"
-
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 function CardComponent (params) {
 
     const { title, number, description } = params;
@@ -75,9 +75,29 @@ export default function Page () {
                 </div>
 
                 <div className="col-span-2 row-span-3">
-                    <Card className="py-3">
+                    <Card className="space-y-8 h-[425px]">
+                        <CardHeader className="pb-1">
+                            <CardTitle>Recent Sales</CardTitle>
+                            <CardDescription>
+                                You made 265 sales this month.
+                            </CardDescription>
+                        </CardHeader>
                         <CardContent>
-                            
+                            <div className="flex flex-col gap-3">
+                                {[...Array(5).keys()].map(index =>
+                                    <div key={index} className="flex justify-between items-center gap-3">
+                                        <Avatar>
+                                            <AvatarImage src="https://ui.shadcn.com/avatars/01.png" alt="@shadcn" />
+                                            <AvatarFallback>SK</AvatarFallback>
+                                        </Avatar>
+                                        <div className="flex-1">
+                                            <p className="font-bold">Sajad Kiani</p>
+                                            <p className="font-light text-sm">skm.kiani@gmail.com</p>
+                                        </div>
+                                        <p className="font-bold">+$19,000.00</p>
+                                    </div>    
+                                )}
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
