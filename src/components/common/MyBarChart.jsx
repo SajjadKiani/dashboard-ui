@@ -70,36 +70,30 @@ const data = [
     pv: 3908,
     amt: 2000,
   },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
 ];
 
 export default function MyBarChart () {
 
     return (
-        <div className='h-[370px]'>
+        <div className='h-[380px]'>
             <ResponsiveContainer width="100%" height="100%">
-                <BarChart width={150} height={40} data={data}>
-                <CartesianGrid  stroke="#f5f5f5" />
-                <XAxis dataKey="name" />
-                <Bar dataKey="uv" fill="#000" />
-                </BarChart>
+              <BarChart data={data}>
+                <XAxis
+                  dataKey="name"
+                  stroke="#888888"
+                  fontSize={12}
+                  tickLine={false}
+                  axisLine={false}
+                />
+                <YAxis
+                  stroke="#888888"
+                  fontSize={12}
+                  tickLine={false}
+                  axisLine={false}
+                  tickFormatter={(value) => `$${value}`}
+                />
+                <Bar dataKey="uv" fill="#adfa1d" radius={[4, 4, 0, 0]} />
+              </BarChart>
             </ResponsiveContainer>
       </div>
     );
