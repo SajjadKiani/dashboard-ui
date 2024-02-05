@@ -10,7 +10,7 @@ export default function Layout ({children}) {
       </div>
       <div className="flex-grow flex">
 
-          <div className="flex-none px-8 py-10">
+          <div className="flex-none px-8 py-10 md:w-[300px]">
             <Sidebar />
           </div>
 
