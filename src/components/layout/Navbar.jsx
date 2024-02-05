@@ -1,24 +1,18 @@
 import Logo from "./Logo";
 import { Button } from "../ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function Navbar () {
 
     return (
         <header className="flex justify-between items-center">
             <Logo />
-            <div className="flex-1 mx-36">
-                <h1 className="font-bold text-xl">
-                    Hello Saji!
-                </h1>
-                <p className="font-light">
-                    Welcome to Dsahboard
-                </p>
-            </div>
 
             <div>
-                <Button>
-                    Login
-                </Button>
+                <Avatar>
+                    <AvatarImage src="https://avatars.githubusercontent.com/u/78721995?v=4" alt="@shadcn" />
+                    <AvatarFallback>SK</AvatarFallback>
+                </Avatar>
             </div>
         </header>
     )
