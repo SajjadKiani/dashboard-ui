@@ -43,6 +43,20 @@ export default function MyLineChart ({ title }) {
            <ResponsiveContainer width={'100%'} height={'100%'}>
               <LineChart data={data}>
               <CartesianGrid stroke="#f5f5f5" />                  
+                <XAxis
+                    dataKey="subscription"
+                    stroke="#888888"
+                    fontSize={12}
+                    tickLine={false}
+                    axisLine={false}
+                  />
+                  <YAxis
+                    stroke="#888888"
+                    fontSize={12}
+                    tickLine={false}
+                    axisLine={false}
+                    tickFormatter={(value) => `${value}`}
+                  />
                   <Line type="monotone" dataKey="revenue" stroke="#000"  strokeWidth={1.5} />
                   {/* <XAxis dataKey="subscription" /> */}
                   {/* <YAxis /> */}
