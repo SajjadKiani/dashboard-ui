@@ -26,10 +26,10 @@ function CardComponent (params) {
 export default function Page () {
 
     return (
-        <>
+        <div className="flex flex-col gap-5">
             <Toolbar title={'Dashboard'} />
 
-            <div className="grid grid-cols-4 grid-rows-3 gap-5 mt-5">
+            <div className="grid grid-cols-4 grid-rows-3 gap-5">
                 <div className="col-span-1 row-span-1">
                     <CardComponent
                         title="Sales"
@@ -102,7 +102,7 @@ export default function Page () {
                     </Card>
                 </div>
             </div>
-        </>
+        </div>
     )
     
 }
