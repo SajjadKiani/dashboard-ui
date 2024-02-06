@@ -75,7 +75,6 @@ const data = [
 export default function MyBarChart () {
 
     return (
-        <div className='h-[380px]'>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={data}>
                 <XAxis
@@ -95,6 +94,5 @@ export default function MyBarChart () {
                 <Bar dataKey="uv" fill="#adfa1d" radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
-      </div>
     );
 }

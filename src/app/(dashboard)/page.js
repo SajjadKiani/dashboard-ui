@@ -8,7 +8,7 @@ function CardComponent (params) {
     const { title, number, description } = params;
     
     return (
-        <Card className="h-[150px]">
+        <Card className="">
             <CardHeader className="pb-2">
                 <div className="flex justify-between">
                     {title}
@@ -29,8 +29,8 @@ export default function Page () {
         <>
             <Toolbar title={'Dashboard'} />
 
-            <div className="grid grid-cols-4 gap-5 mt-5">
-                <div className="col-span-1">
+            <div className="grid grid-cols-4 grid-rows-3 gap-5 mt-5">
+                <div className="col-span-1 row-span-1">
                     <CardComponent
                         title="Sales"
                         description="+20.1% from last month"
@@ -39,7 +39,7 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-1">
+                <div className="col-span-1 row-span-1">
                     <CardComponent
                         title="Income"
                         description="+20.1% from last month"
@@ -48,7 +48,7 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-1">
+                <div className="col-span-1 row-span-1">
                     <CardComponent
                         title="Users"
                         description="+20.1% from last month"
@@ -57,7 +57,7 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-1">
+                <div className="col-span-1 row-span-1">
                     <CardComponent
                         title="Active Now"
                         description="+20.1% from last month"
@@ -66,16 +66,16 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-2 row-span-3">
+                <div className="col-span-2 row-span-2">
                     <Card className="py-3">
-                        <CardContent>
+                        <CardContent className="h-full">
                             <MyBarChart />
                         </CardContent>
                     </Card>
                 </div>
 
-                <div className="col-span-2 row-span-3">
-                    <Card className="space-y-8 h-[425px]">
+                <div className="col-span-2 row-span-2">
+                    <Card className="space-y-8">
                         <CardHeader className="pb-1">
                             <CardTitle>Recent Sales</CardTitle>
                             <CardDescription>
