@@ -1,4 +1,3 @@
-import Logo from "./Logo";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import ModeToggle from "../common/ModeToggle";
@@ -6,8 +5,7 @@ import ModeToggle from "../common/ModeToggle";
 export default function Navbar () {
 
     return (
-        <header className="flex justify-between items-center">
-            <Logo />
+        <header className="flex justify-end items-center">
 
             <div className="flex gap-3">
                 <Avatar>

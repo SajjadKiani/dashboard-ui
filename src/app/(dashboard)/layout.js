@@ -4,17 +4,17 @@ import Sidebar from "@/components/layout/sidebar";
 export default function Layout ({children}) {
 
   return (
-    <main className="flex flex-col min-h-screen bg-secondary/30">
-      <div className="flex-none px-8 py-3">
-        <Navbar />
+    <main className="flex min-h-screen bg-secondary/30">
+      <div className="px-8 py-5 min-w-[300px]">
+        <Sidebar />
       </div>
-      <div className="flex-grow flex">
+      <div className="flex-1 flex flex-col">
 
-          <div className="flex-none px-8 py-10 md:w-[300px]">
-            <Sidebar />
+          <div className="px-8 py-5">
+            <Navbar />
           </div>
 
-          <div className="flex-1 p-20 pt-10">
+          <div className="flex-1 container">
             {children}
           </div>
 
