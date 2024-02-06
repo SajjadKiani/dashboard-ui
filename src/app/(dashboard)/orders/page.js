@@ -31,13 +31,15 @@ export default function Page () {
                         </CardContent>
                     </Card>
                 </div>
-            </div>
 
-            <Card className={'pt-5'}>
-                <CardContent>
-                    <MyDataTable />
-                </CardContent>
-            </Card>
+                <div className="col-span-3">
+                    <Card className={'pt-5'}>
+                        <CardContent>
+                            <MyDataTable />
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
         </div>
     )
     
