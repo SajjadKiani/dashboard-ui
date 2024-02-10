@@ -1,11 +1,26 @@
 "use client"
 import Navbar from "@/components/layout/Navbar";
 import Sidebar from "@/components/layout/sidebar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Layout ({children}) {
 
   const [open, setOpen] = useState(true)
+
+  useEffect(() => {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    setOpen(!isMobile)
+
+    const handleResize = () => {
+      const isMobileNow = window.matchMedia('(max-width: 768px)').matches;
+      if (isMobile !== isMobileNow)
+        setOpen(isMobileNow ? false : open)
+      
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  },[])
 
   return (
     <main className="flex min-h-screen bg-secondary/30">
