@@ -2,25 +2,17 @@
 import Navbar from "@/components/layout/Navbar";
 import Sidebar from "@/components/layout/sidebar";
 import { useState, useEffect } from "react";
+import { useMediaQuery } from "@/hooks/use-media-query"
 
 export default function Layout ({children}) {
 
-  const [open, setOpen] = useState(true)
+  const isDesktop = useMediaQuery("(min-width: 768px)")
+
+  const [open, setOpen] = useState(isDesktop)
 
   useEffect(() => {
-    const isMobile = window.matchMedia('(max-width: 768px)').matches;
-    setOpen(!isMobile)
-
-    const handleResize = () => {
-      const isMobileNow = window.matchMedia('(max-width: 768px)').matches;
-      if (isMobile !== isMobileNow)
-        setOpen(isMobileNow ? false : open)
-      
-    }
-
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  },[])
+    setOpen(isDesktop)
+  },[isDesktop])
 
   return (
     <main className="flex min-h-screen bg-secondary/30">
