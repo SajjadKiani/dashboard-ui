@@ -10,13 +10,13 @@ import { useForm } from "react-hook-form"
 export default function Toolbar({title}) {
 
     return (
-        <div className="flex justify-between items-center">
-            <div>
+        <div className="grid justify-between grid-cols-2 items-center gap-3">
+            <div className="md:col-span-1 col-span-2">
                 <h1 className="font-bold text-xl">
                     {title}
                 </h1>
             </div>
-            <div className="flex gap-3">
+            <div className="md:col-span-1 col-span-2 flex gap-3 justify-end">
                 <CalendarForm />
                 <Button>
                     <Download className="mr-2 h-4 w-4" />
@@ -34,7 +34,7 @@ function CalendarForm() {
 
   return (
     <Form {...form}>
-      <form className="space-y-8">
+      <form className="">
         <FormField
           control={form.control}
           name="dob"
@@ -46,7 +46,7 @@ function CalendarForm() {
                     <Button
                       variant={"outline"}
                       className={cn(
-                        "md:w-[300px] w-[100px] pl-3 text-left font-normal",
+                        "md:w-[300px] w-[200px] pl-3 text-left font-normal",
                         !field.value && "text-muted-foreground"
                       )}
                     >
