@@ -46,7 +46,7 @@ function CalendarForm() {
                     <Button
                       variant={"outline"}
                       className={cn(
-                        "md:w-[300px] w-[200px] pl-3 text-left font-normal",
+                        "md:w-[300px] w-[183px] pl-3 text-left font-normal",
                         !field.value && "text-muted-foreground"
                       )}
                     >
