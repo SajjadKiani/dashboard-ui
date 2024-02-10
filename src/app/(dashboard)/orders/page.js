@@ -9,7 +9,7 @@ export default function Page () {
         <div className="flex flex-col gap-5">
             <Toolbar title={'Orders'} />
 
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
                 <div className="col-span-1">
                     <Card className={"py-3"}>
                         <CardContent>
@@ -32,7 +32,7 @@ export default function Page () {
                     </Card>
                 </div>
 
-                <div className="col-span-3">
+                <div className="md:col-span-3 col-span-1">
                     <Card className={'pt-5'}>
                         <CardContent>
                             <MyDataTable />
