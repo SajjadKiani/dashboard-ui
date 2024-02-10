@@ -21,7 +21,7 @@ export default function Layout ({children}) {
       </aside>
       <div className="flex-1 flex flex-col">
 
-          <div className="pr-8 pl-1 py-5">
+          <div className="md:px-5 px-1 py-5">
             <Navbar setOpen={setOpen} />
           </div>
 
