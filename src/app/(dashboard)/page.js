@@ -32,8 +32,8 @@ export default function Page () {
         <div className="flex flex-col gap-5">
             <Toolbar title={'Dashboard'} />
 
-            <div className="grid grid-cols-4 grid-rows-3 gap-5">
-                <div className="col-span-1 row-span-1">
+            <div className="grid md:grid-cols-4 grid-cols-1 md:grid-rows-3 gap-5">
+                <div className="col-span-1">
                     <CardComponent
                         title="Sales"
                         description="+20.1% from last month"
@@ -42,7 +42,7 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-1 row-span-1">
+                <div className="col-span-1">
                     <CardComponent
                         title="Income"
                         description="+20.1% from last month"
@@ -51,7 +51,7 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-1 row-span-1">
+                <div className="col-span-1 ">
                     <CardComponent
                         title="Users"
                         description="+20.1% from last month"
@@ -60,7 +60,7 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-1 row-span-1">
+                <div className="col-span-1">
                     <CardComponent
                         title="Active Now"
                         description="+20.1% from last month"
@@ -69,7 +69,7 @@ export default function Page () {
                     />
                 </div>
 
-                <div className="col-span-2 row-span-2">
+                <div className="md:col-span-2 col-span-1 md:row-span-2">
                     <Card className="py-3">
                         <CardContent className="h-full">
                             <MyBarChart />
@@ -77,8 +77,8 @@ export default function Page () {
                     </Card>
                 </div>
 
-                <div className="col-span-2 row-span-2">
-                    <Card className="space-y-8">
+                <div className="md:col-span-2 md:row-span-2">
+                    <Card className="">
                         <CardHeader className="pb-1">
                             <CardTitle>Recent Sales</CardTitle>
                             <CardDescription>
@@ -98,7 +98,7 @@ export default function Page () {
                                             <p className="font-bold">Sajad Kiani</p>
                                             <p className="font-light text-sm">skm.kiani@gmail.com</p>
                                         </div>
-                                        <p className="font-bold">+$19,000.00</p>
+                                        <p className="font-bold">+$190</p>
                                     </div>    
                                     <Separator className="" />
                                     </>
