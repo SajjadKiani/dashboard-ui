@@ -3,6 +3,9 @@ import Toolbar from "@/components/common/Toolbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Users, ShoppingCart, Activity } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Separator } from "@/components/ui/separator";
+
+
 function CardComponent (params) {
 
     const { title, number, description } = params;
@@ -85,6 +88,7 @@ export default function Page () {
                         <CardContent>
                             <div className="flex flex-col gap-3">
                                 {[...Array(5).keys()].map(index =>
+                                <>
                                     <div key={index} className="flex justify-between items-center gap-3">
                                         <Avatar>
                                             <AvatarImage src="https://ui.shadcn.com/avatars/01.png" alt="@shadcn" />
@@ -96,6 +100,8 @@ export default function Page () {
                                         </div>
                                         <p className="font-bold">+$19,000.00</p>
                                     </div>    
+                                    <Separator className="" />
+                                    </>
                                 )}
                             </div>
                         </CardContent>

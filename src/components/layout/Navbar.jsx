@@ -1,11 +1,16 @@
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import ModeToggle from "../common/ModeToggle";
+import { Menu } from "lucide-react";
 
-export default function Navbar () {
+export default function Navbar ({setOpen}) {
 
     return (
-        <header className="flex justify-end items-center">
+        <header className="flex mx-3 justify-between items-center">
+
+            <Button variant="ghost" onClick={() => setOpen(state => !state)} >
+                <Menu />
+            </Button>
 
             <div className="flex gap-3">
                 <Avatar>

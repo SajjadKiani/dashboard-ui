@@ -1,17 +1,21 @@
+"use client"
 import Navbar from "@/components/layout/Navbar";
 import Sidebar from "@/components/layout/sidebar";
+import { useState } from "react";
 
 export default function Layout ({children}) {
 
+  const [open, setOpen] = useState(true)
+
   return (
     <main className="flex min-h-screen bg-secondary/30">
-      <div className="px-8 py-5 min-w-[300px]">
+      <aside className={`px-4 py-5 min-w-[250px] transition-all duration-300 ${!open && '-ml-64'}`}>
         <Sidebar />
-      </div>
+      </aside>
       <div className="flex-1 flex flex-col">
 
-          <div className="px-8 py-5">
-            <Navbar />
+          <div className="pr-8 pl-1 py-5">
+            <Navbar setOpen={setOpen} />
           </div>
 
           <div className="flex-1 container">
