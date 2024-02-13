@@ -4,14 +4,24 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import Links from "./links";
 import Logo from "./Logo";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import {ArrowLeftToLine} from "lucide-react"
 
-export default function Sidebar () {
-    
+export default function Sidebar ({setOpen}) {
+
+    const isDesktop = useMediaQuery("(min-width: 768px)")
     const pathname = usePathname()  
 
     return (
         <div className="flex flex-col gap-12">
-            <Logo />
+            <div className="flex justify-between">
+                <Logo />
+                {!isDesktop && 
+                    <Button variant="ghost" onClick={() => setOpen(false)}>
+                        <ArrowLeftToLine /> 
+                    </Button>
+                }
+            </div>
             <nav className="flex-1 flex flex-col gap-2 justify-center">
                 {Links.map((link, index) => 
                     <Button key={index} asChild variant={ pathname === link.path ? '' : 'ghost' }>

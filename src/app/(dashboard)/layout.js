@@ -16,8 +16,8 @@ export default function Layout ({children}) {
 
   return (
     <main className="flex min-h-screen bg-secondary/30">
-      <aside className={`px-4 py-5 min-w-[250px] transition-all duration-300 ${!open && '-ml-64'}`}>
-        <Sidebar />
+      <aside className={`px-4 py-5 min-w-[250px] transition-all duration-300 h-screen ${!open ? '-ml-64' : ''} ${!isDesktop ? 'z-10 fixed bg-white dark:bg-black shadow-md' : ""}`}>
+        <Sidebar setOpen={setOpen} />
       </aside>
       <div className="flex-1 flex flex-col">
 
