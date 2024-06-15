@@ -23,7 +23,7 @@ export default function Page() {
                 {posts.map((post, index) => 
                 
                 
-                    <div key={index}>
+                    <div key={index} className=" col-span-2 md:col-span-1">
                         <Card className="">
                             <CardHeader>
                                 <CardTitle>{post.title}</CardTitle>
