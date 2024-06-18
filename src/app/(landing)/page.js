@@ -1,11 +1,13 @@
+import { About, Hero } from "./components";
 
 
 export default function Page () {
     
 
     return (
-        <div>
-            Landing
-        </div>
+        <>
+            <Hero />
+            <About />
+        </>
     )
 }
