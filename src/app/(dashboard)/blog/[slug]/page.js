@@ -1,6 +1,4 @@
-import { TextEditor } from "@/components/common/TextEditor";
-
-
+import Tiptap from "@/components/common/Tiptap";
 
 export default function Page ({params}) {
     
@@ -9,7 +7,7 @@ export default function Page ({params}) {
 
     return (
         <div>
-            <TextEditor />
+            <Tiptap />
         </div>
     )
 }
