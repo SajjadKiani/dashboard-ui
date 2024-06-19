@@ -25,8 +25,8 @@ export default function Page () {
                 </div>
 
                 <div className="col-span-1 md:row-span-3">
-                    <Card className="space-y-8">
-                        <CardHeader className="pb-1">
+                    <Card className="space-y-8 h-full">
+                        <CardHeader className="pb-1 h-full">
                             <CardTitle>Recent Orders</CardTitle>
                             <CardDescription>
                                 You have 10 open orders.
