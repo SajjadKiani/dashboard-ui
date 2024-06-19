@@ -5,6 +5,7 @@ import Features from "./Features";
 import Services from "./Services";
 import Cta from "./Cta";
 import Testimonials from "./Testimonials";
+import Team from "./Team";
 
 export {
     Hero,
@@ -14,4 +15,5 @@ export {
     Services,
     Cta,
     Testimonials,
+    Team,
 }
