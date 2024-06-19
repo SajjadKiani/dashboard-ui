@@ -9,6 +9,7 @@ import Team from "./Team";
 import Pricing from "./Pricing";
 import Newsletter from "./Newsletter";
 import FAQ from "./FAQ";
+import Footer from "./Footer"
 
 export {
     Hero,
@@ -22,4 +23,5 @@ export {
     Pricing,
     Newsletter,
     FAQ,
+    Footer,
 }
