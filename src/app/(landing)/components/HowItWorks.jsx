@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "@/components/Icons";
 
 
 const features = [
@@ -29,7 +29,7 @@ const features = [
   },
 ];
 
-export const HowItWorks = () => {
+const HowItWorks = () => {
   return (
     <section
       id="howItWorks"
@@ -66,3 +66,5 @@ export const HowItWorks = () => {
     </section>
   );
 };
+
+export default HowItWorks;

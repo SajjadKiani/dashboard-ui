@@ -1,4 +1,4 @@
-import { About, Hero } from "./components";
+import { About, Hero, HowItWorks } from "./components";
 
 
 export default function Page () {
@@ -8,6 +8,7 @@ export default function Page () {
         <>
             <Hero />
             <About />
+            <HowItWorks />
         </>
     )
 }
