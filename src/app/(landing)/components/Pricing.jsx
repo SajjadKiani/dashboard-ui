@@ -82,7 +82,7 @@ const pricingList = [
           <Card
             key={pricing.title}
             className={
-              pricing.popular === PopularPlanType.YES
+              pricing.popular === 1
                 ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10"
                 : ""
             }
@@ -90,7 +90,7 @@ const pricingList = [
             <CardHeader>
               <CardTitle className="flex item-center justify-between">
                 {pricing.title}
-                {pricing.popular === PopularPlanType.YES ? (
+                {pricing.popular === 1 ? (
                   <Badge
                     variant="secondary"
                     className="text-sm text-primary"

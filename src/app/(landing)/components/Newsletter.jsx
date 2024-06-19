@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const Newsletter = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Subscribed!");
-  };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log("Subscribed!");
+//   };
 
   return (
     <section id="newsletter">
@@ -24,7 +24,7 @@ const Newsletter = () => {
 
         <form
           className="flex flex-col w-full md:flex-row md:w-6/12 lg:w-4/12 mx-auto gap-4 md:gap-2"
-          onSubmit={handleSubmit}
+        //   onSubmit={handleSubmit}
         >
           <Input
             placeholder="leomirandadev@gmail.com"
