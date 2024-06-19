@@ -7,6 +7,7 @@ import Cta from "./Cta";
 import Testimonials from "./Testimonials";
 import Team from "./Team";
 import Pricing from "./Pricing";
+import Newsletter from "./Newsletter";
 
 export {
     Hero,
@@ -18,4 +19,5 @@ export {
     Testimonials,
     Team,
     Pricing,
+    Newsletter,
 }
