@@ -4,6 +4,7 @@ import HowItWorks from "./HowItWorks";
 import Features from "./Features";
 import Services from "./Services";
 import Cta from "./Cta";
+import Testimonials from "./Testimonials";
 
 export {
     Hero,
@@ -12,4 +13,5 @@ export {
     Features,
     Services,
     Cta,
+    Testimonials,
 }
