@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import Team from "./Team";
 import Pricing from "./Pricing";
 import Newsletter from "./Newsletter";
+import FAQ from "./FAQ";
 
 export {
     Hero,
@@ -20,4 +21,5 @@ export {
     Team,
     Pricing,
     Newsletter,
+    FAQ,
 }

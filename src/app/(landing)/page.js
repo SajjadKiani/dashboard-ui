@@ -1,4 +1,4 @@
-import { About, Cta, Features, Hero, HowItWorks, Newsletter, Pricing, Services, Team, Testimonials } from "./components";
+import { About, Cta, FAQ, Features, Hero, HowItWorks, Newsletter, Pricing, Services, Team, Testimonials } from "./components";
 
 
 export default function Page () {
@@ -16,6 +16,7 @@ export default function Page () {
             <Team />
             <Pricing />
             <Newsletter />
+            <FAQ />
         </>
     )
 }
