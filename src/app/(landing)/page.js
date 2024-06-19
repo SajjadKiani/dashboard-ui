@@ -1,4 +1,4 @@
-import { About, Features, Hero, HowItWorks } from "./components";
+import { About, Features, Hero, HowItWorks, Services } from "./components";
 
 
 export default function Page () {
@@ -10,6 +10,7 @@ export default function Page () {
             <About />
             <HowItWorks />
             <Features />
+            <Services />
         </>
     )
 }
