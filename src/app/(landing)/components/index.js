@@ -10,6 +10,7 @@ import Pricing from "./Pricing";
 import Newsletter from "./Newsletter";
 import FAQ from "./FAQ";
 import Footer from "./Footer"
+import ScrollToTop from "./ScrollToTop";
 
 export {
     Hero,
@@ -24,4 +25,5 @@ export {
     Newsletter,
     FAQ,
     Footer,
+    ScrollToTop,
 }
