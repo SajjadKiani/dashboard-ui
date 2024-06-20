@@ -54,7 +54,7 @@ export const Navbar = () => {
           </NavigationMenuItem>
 
           {/* mobile */}
-          <span className="flex md:hidden">
+          <span className="flex md:hidden items-center">
             <ModeToggle />
 
             <Sheet
@@ -62,18 +62,13 @@ export const Navbar = () => {
             //   onOpenChange={setIsOpen}
             >
               <SheetTrigger className="px-2" asChild>
-                <Menu
-                  className="flex md:hidden h-5 w-5"
-                //   onClick={() => setIsOpen(true)}
-                >
-                  <span className="sr-only">Menu Icon</span>
-                </Menu>
+                <Menu className="w-[40px] h-[40px]" />
               </SheetTrigger>
 
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    <Logo />
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -123,7 +118,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/sajjadkiani/dashboard-ui"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
