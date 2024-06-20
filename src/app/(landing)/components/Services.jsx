@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "@/components/Icons";
-// import cubeLeg from "../assets/cube-leg.png";
+import Image from "next/image";
 
 const serviceList = [
   {
@@ -59,11 +59,13 @@ const serviceList = [
           </div>
         </div>
 
-        {/* <img
-          src={cubeLeg}
+        <Image
+          width={300}
+          height={300}
+          src={'/cube-leg.png'}
           className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
           alt="About services"
-        /> */}
+        />
       </div>
     </section>
   );

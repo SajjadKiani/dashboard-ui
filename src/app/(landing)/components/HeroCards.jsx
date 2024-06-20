@@ -28,12 +28,12 @@ export const HeroCards = () => {
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
+            <CardTitle className="text-lg">John Doe</CardTitle>
             <CardDescription>@john_doe</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>This dashboard page is awesome!</CardContent>
       </Card>
 
       {/* Team */}
@@ -73,7 +73,7 @@ export const HeroCards = () => {
             </a>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/leo_mirand4"
+              href="https://twitter.com/"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",

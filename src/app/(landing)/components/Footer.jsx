@@ -151,14 +151,14 @@ const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2024 made by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://github.com/leoMirandaa"
+            href="https://sajadkiyani.ir"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Sajjad kiani
           </a>
         </h3>
       </section>
