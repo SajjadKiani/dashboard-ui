@@ -70,7 +70,7 @@ export default function Page () {
                 </div>
 
                 <div className="md:col-span-2 col-span-1 md:row-span-2">
-                    <Card className="py-3">
+                    <Card className="py-3 h-full">
                         <CardContent className="h-full">
                             <MyBarChart />
                         </CardContent>
