@@ -1,4 +1,4 @@
-import { LayoutDashboard, BarChartBig, Bell, ShoppingCart, NotebookText, Mails } from "lucide-react"
+import { LayoutDashboard, BarChartBig, Bell, ShoppingCart, NotebookText, Mails, Settings } from "lucide-react"
  
 const Links = [
     {title: 'dashboard', path: '/dashboard', icon: LayoutDashboard},
@@ -7,6 +7,7 @@ const Links = [
     {title: 'blog', path: '/dashboard/blog', icon: NotebookText},
     {title: 'notifications', path: '/dashboard/notifications', icon: Bell },
     {title: 'mails', path: '/dashboard/mails', icon: Mails },
+    {title: 'setting', path: '/dashboard/setting', icon: Settings },
 ]
 
 export default Links;
