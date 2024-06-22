@@ -75,7 +75,7 @@ const data = [
 export default function MyBarChart () {
 
     return (
-            <ResponsiveContainer width="100%" minHeight={'200px'}>
+            <ResponsiveContainer width="100%" minHeight={'300px'}>
               <BarChart data={data}>
                 <XAxis
                   dataKey="name"
